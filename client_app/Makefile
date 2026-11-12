@@ -2,7 +2,7 @@ CXX = g++
 CXXFLAGS = -Wall -Wextra -O2
 LDFLAGS = -lssl -lcrypto
 TARGET = client
-SRCS = main.cpp client.cpp
+SRCS = main.cpp interface.cpp file_io.cpp network.cpp authenticator.cpp
 OBJS = $(SRCS:.cpp=.o)
 
 all: $(TARGET)
